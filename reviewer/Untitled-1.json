@@ -1,0 +1,39 @@
+{
+    "@context": "https://schema.org",
+    "@graph": [
+    {
+        "@type": "WebSite",
+        "@id": "http://translation.local/#website",
+        "url": "http://translation.local/",
+        "name": "Translation",
+        "inLanguage": "ru-RU",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "http://translation.local/s={search_term_string}",
+            "query-input": "required name=search_term_string"
+        },
+        "publisher": {
+            "@id": "http://translation.local/#organization"
+        }
+    },
+    {
+        "@type": "ImageObject",
+        "@id": "https://vulkan-vegas.de/#primaryImage",
+        "url": "http://translation.local/wp-content/themes/translation/img/logo.svg",
+        "width": "98",
+        "height": "32"
+    },
+    {
+        "@type": "CollectionPage",
+        "@id": "https://vulkan-vegas.de/#webpage",
+        "url": "http://translation.local/",
+        "name": "Главная страница - events",
+        "description": "Смотреть трансляции единоборств онлайн UFC, MMA бесплатно",
+        "isPartOf": "http://translation.local/#website",
+        "inLanguage": "ru-RU",
+        "potentialAction": {
+            "@type": "ReadAction",
+            "target": "http://translation.local/"
+        }
+    }]
+}

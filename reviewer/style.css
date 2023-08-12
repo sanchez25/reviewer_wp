@@ -1,0 +1,761 @@
+/* Theme Name:  Translation */
+
+@font-face {
+  font-style: normal;
+  font-family: "Roboto Condensed";
+  font-weight: 500;
+  src: url('http://translation.local/wp-content/themes/translation/fonts/Robotocondensed.ttf');
+  font-display: swap;
+}
+@font-face {
+  font-style: normal;
+  font-family: "Roboto Condensed";
+  font-weight: 700;
+  src: url('http://translation.local/wp-content/themes/translation/fonts/Robotocondensedbold.ttf');
+  font-display: swap;
+}
+@font-face {
+  font-style: normal;
+  font-family: "PFBeauSansPro";
+  font-weight: 500;
+  src: url('http://translation.local/wp-content/themes/translation/fonts/PFBeauSansPro-Regular.ttf');
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  background-color: #efefef;
+  font-family: "Roboto Condensed";
+}
+button, 
+button:active, 
+button:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+input,
+input:active,
+input:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+textarea,
+textarea:active,
+textarea:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+*, :after, :before {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #555;
+}
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.1em;
+  position: relative;
+  color: #222;
+  padding-bottom: 15px;
+  margin: 0;
+}
+h2 {
+  font-size: 25px;
+  font-weight: normal;
+  color: #222;
+  margin: 0;
+  line-height: 1;
+}
+p {
+  line-height: 1.55;
+}
+
+header {
+  background: rgba(0,0,0,1);
+  position: sticky;
+  top: 0;
+  box-shadow: 0 5px 10px rgb(0 0 0 / 45%);
+  z-index: 2;
+}
+.header-block {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 10px 0;
+}
+.header-logo {
+  position: relative;
+  width: 98px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1024px;
+}
+.main-block-tabs {
+  background: #fff;
+  padding: 30px;
+}
+.main-block-title {
+  margin: 20px 0;
+}
+.tabs-title {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+.tabs-title-text {
+  margin-right: 10px;
+}
+.tabs-title-link {
+  display: flex;
+  align-items: center;
+  color: #000;
+  font-weight: 700;
+  transition: .3s;
+}
+.tabs-title-link-icon {
+  width: 12px;
+  height: 12px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 5px;
+}
+.tabs-title-link:hover {
+  opacity: 0.7;
+}
+.tabs-block {
+  display: flex;
+  width: 100%;
+}
+.tabs-block-item {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  width: 310px;
+  box-shadow: 0 6px 12px rgb(0 0 0 / 10%);
+  margin-bottom: 25px;
+  margin-right: 15px;
+  background: #fff;
+  background-repeat: no-repeat;
+  background-position: 15px 0px;
+}
+.tabs-block-item:last-child {
+  margin-right: 0;
+}
+.tabs-block-item-head {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.tabs-block-column {
+  width: 30%;
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+}
+.tabs-block-img {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 45px;
+  height: 45px;
+}
+.tabs-block-column.right {
+  justify-content: flex-end;
+}
+.tabs-block-column.right span {
+  text-align: end;
+}
+.tabs-block-logo {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #222;
+  margin-bottom: 5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tabs-block-column-center {
+  width: 40%;
+  text-align: center;
+  font-weight: 700;
+}
+.tabs-block-item-name {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.tabs-block-item-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0 5px 0;
+}
+.tabs-block-item-bottom a {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #efefef;
+  transition: .3s;
+  border-radius: 3px;
+  padding: 13px 15px;
+  width: 150px;
+  background: #000;
+  text-transform: uppercase;
+}
+.tabs-block-item-bottom a:hover {
+  background: #222;
+}
+.tabs-block-item-bottom-icon {
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 10px;
+}
+
+.single-content-block {
+  background: #fff;
+  padding: 30px;
+}
+.tabs-block-item-head.single {
+  padding: 0 25px;
+}
+.tabs-block-column.single {
+  font-size: 18px;
+}
+.tabs-block-column-center.single {
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+}
+.tabs-block-column-location {
+  font-size: 14px;
+  margin-top: 5px;
+}
+.category-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 5px 0 10px 0;
+}
+.category-title a {
+  transition: .3s;
+}
+.category-title a:hover {
+  color: #000;
+}
+.tabs-block-logo.title {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 0;
+  margin-right: 5px;
+}
+.single-card-fighters {
+  margin-top: 20px;
+}
+.single-card-fighters-title {
+  padding: 10px 0 20px 0;
+}
+.fighters-card-item {
+  background: #fff;
+  box-shadow: 0 6px 12px rgb(0 0 0 / 10%);
+}
+.fighters-card-item {
+  margin-bottom: 20px;
+}
+.fighters-card-item-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0 5px 0;
+  flex-direction: column;
+}
+.fighters-card-item-title span {
+  font-size: 24px;
+  font-weight: 700;
+}
+.fighters-card-item-info {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+.fighters-card-item-info-left {
+  font-weight: 700;
+}
+.fighters-card-item-info-right {
+  font-weight: 700;
+}
+.single-content-block-text {
+  margin-top: 30px;
+}
+.single-content-block-text p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.single-fighter-card-top {
+  display: flex;
+  align-items: center;
+  background: rgba(0,0,0,.9);
+  height: 320px;
+  position: relative;
+  padding: 10px;
+}
+.single-fighter-card-info {
+  margin-left: 250px;
+}
+.single-fighter-card-image {
+  width: 200px;
+  position: absolute;
+  top: 10px;
+  left: 25px;
+}
+.single-fighter-card-image img {
+  display: block;
+  width: auto;
+  height: 100%;
+}
+.single-fighter-card-bottom {
+  border: 4px solid rgba(0,0,0,.9);
+  padding: 20px;
+}
+.block-age {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.block-age:last-child {
+  margin-bottom: 0;
+}
+.block-age span {
+  color: #efefef;
+  font-size: 18px;
+}
+.block-age-title {
+  font-weight: 700;
+  margin-right: 5px;
+}
+.single-fighter-card-info-country {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.country-flag {
+  width: 80px;
+  height: 53px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.single-fighter-card-info-country span {
+  margin-top: 5px;
+  color: #efefef;
+  font-weight: 700;
+  width: 120px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.single-fighter-card-all-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.single-fighter-card-column {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+.single-fighter-card-column-title {
+  margin-bottom: 5px;
+  font-weight: 700;
+  color: #efefef;
+  font-size: 18px;
+}
+.single-fighter-card-column-category {
+  color: #7b8c98;
+  font-size: 18px;
+}
+.single-fighter-card-all-wins {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+.single-fighter-wins-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.single-fighter-wins-row:last-child {
+  margin-bottom: 0;
+}
+.single-fighter-wins-row-title {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  margin-right: 10px;
+}
+.single-fighter-wins-row-title.fight {
+  color: #efefef;
+}
+.single-fighter-wins-row-title.win {
+  color: #44be4c;
+}
+.single-fighter-wins-row-title.defeat {
+  color: #c00;
+}
+.single-fighter-wins-row-title.draw {
+  color: #7b8c98;
+}
+.single-fighter-wins-row-block {
+  font-size: 18px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  letter-spacing: -1px;
+  border: 2px solid #efefef;
+}
+.single-fighter-wins-row-block.fight {
+  background: #efefef;
+  color: #000;
+}
+.single-fighter-wins-row-block.win {
+  background: #44be4c;
+  color: #efefef;
+}
+.single-fighter-wins-row-block.defeat {
+  background: #c00;
+  color: #efefef;
+}
+.single-fighter-wins-row-block.draw {
+  background: #7b8c98;
+  color: #efefef;
+}
+
+footer {
+  margin-top: 10px;
+}
+.footer-block {
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+}
+.footer-block span {
+  color: #efefef;
+}
+
+.error-page {
+  position: relative;
+  min-height: 85.5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.error-page h1 {
+  font-size: 150px;
+}
+
+@media screen and (max-width: 1024px) {
+  .tabs-block-item {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 860px) {
+  .tabs-block-column {
+    width: 35%;
+  }
+  .tabs-block-column-center {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .tabs-block {
+    flex-direction: column;
+    align-items: center;
+  }
+  .tabs-block-item {
+    margin-right: 0;
+  }
+  .single-fighter-card-top {
+    height: auto;
+  }
+  .single-fighter-card-info-country {
+    position: relative;
+    margin-bottom: 20px;
+    flex-direction: row;
+    right: auto;
+    align-items: flex-start;
+  }
+  .single-fighter-card-info-country img {
+    height: 30px;
+  }
+  .single-fighter-card-info-country span {
+    width: auto;
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .single-content-block {
+    padding: 15px;
+  }
+  .single-fighter-card-image {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin-bottom: 10px;
+  }
+  .single-fighter-card-info {
+    margin-left: 0;
+    width: 100%;
+    padding: 5px;
+  }
+  .single-fighter-card-top {
+    flex-direction: column;
+  }
+  .single-fighter-card-info-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .tabs-block-column-center.single {
+    font-size: 16px;
+  }
+  .tabs-block-column-location {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .tabs-title-link {
+    font-size: 14px;
+  }
+  .tabs-title-text {
+    font-size: 14px;
+  }
+  .single-fighter-card-all-info {
+    flex-direction: column;
+  }
+  .single-fighter-card-column {
+    width: 100%;
+    align-items: center;
+  }
+  .error-page h2 {
+    font-size: 20px;
+  }
+  .tabs-block-item-head.single {
+    padding: 0 10px;
+  }
+}
+
+.block-content-europe {
+  background-color: #000;
+  background-position: 100% 0;
+  background-size: auto;
+  background-repeat: no-repeat;
+  height: 100%;
+  font-family: "PFBeauSansPro", sans-serif;
+}
+.europe-item {
+  margin: 0 10px;
+  border-right: 1px solid #f7a600;
+}
+.europe-item-link {
+  display: flex;
+  flex-direction: column;
+}
+.date-europe-match {
+  display: block;
+  color: hsla(0,0%,100%,.6);
+  font-size: 13px;
+}
+.date-europe-match:first-child {
+  margin-bottom: 3px;
+}
+.europe-match {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.europe-comand {
+  display: flex;
+  align-items: center;
+}
+.europe-comand:first-child {
+  margin-bottom: 5px;
+}
+.europe-comand img {
+  width: 16px !important;
+  height: 16px;
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  margin-right: 5px;
+}
+.comand-europe-name {
+  color: #fff;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 95px;
+}
+#owl-slider .owl-stage {
+  padding: 35px 0 15px 0;
+}
+.owl-theme .owl-nav {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  margin-top: 0 !important;
+}
+.owl-prev {
+  border: 2px solid #f7a600 !important;
+  width: 24px;
+  height: 24px;   
+  border-radius: 50% !important;
+}
+.owl-prev:hover {
+  background: none !important;
+}
+.owl-prev span {
+  display: none;
+}
+.owl-prev::after {
+  content: "";
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0;
+  width: 12px;
+  height: 14px;
+  margin: 0 auto;
+  position: static;
+  background-image: url("http://translation.local/wp-content/themes/translation/img/euro/left-arrow.svg");
+}
+.owl-next {
+  border: 2px solid #f7a600 !important;
+  width: 24px;
+  height: 24px;
+  border-radius: 50% !important;
+}
+.owl-next:hover {
+  background: none !important;
+}
+.owl-next span {
+  display: none;
+}
+.owl-next::after {
+  content: "";
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0;
+  width: 12px;
+  height: 14px;
+  margin: 0 auto;
+  position: static;
+  background-image: url("http://translation.local/wp-content/themes/translation/img/euro/right-arrow.svg");
+}
+
+.container-table {
+  margin: 0 auto;
+  max-width: 1164px;
+  background-color: #fff;
+  padding: 30px 50px;
+}
+.cards-table-row {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
+  margin-bottom: 20px;
+}
+.cards-table-row:last-child {
+  margin-bottom: 0;
+}
+.cards-table-col {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0 6px 12px rgb(0, 0, 0, 0.1);
+  padding: 15px 0;
+  border-radius: 3px;
+}
+.cards-table-btn-logo {
+  width: 100px;
+  height: 50px;
+  background-image: url("http://translation.local/wp-content/themes/translation/img/football.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-bottom: 10px;
+}
+.cards-table-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 40px;
+  text-align: center;
+  background: #009bb4;
+  color: #fff;
+  border: 2px solid #009bb4;
+  border-radius: 5px;
+  transition: .3s;
+  margin-bottom: 10px;
+}
+.cards-table-btn:hover {
+  color: #009bb4;
+  background: none;
+}
+@media screen and (max-width: 1024px) {
+  .cards-table-row {
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+@media screen and (max-width: 860px) {
+  .cards-table-row {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+@media screen and (max-width: 576px) {
+  .cards-table-btn {
+    width: 150px;
+  }
+} 
+@media screen and (max-width: 480px) {
+  .cards-table-row {
+    grid-template-columns: repeat(1,1fr);
+  }
+}
